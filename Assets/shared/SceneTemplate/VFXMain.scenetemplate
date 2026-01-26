@@ -19,7 +19,11 @@ MonoBehaviour:
   dependencies:
   - dependency: {fileID: 2800000, guid: 03c84622634a2194db8cb995a7fdddb2, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: f4c70010ddae3574e9c2315e30f0d140, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 5a68a2c8045f5a942af11f7c1210b456, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 7aaadd75e78078f4381e47e32a1f997e, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     instantiationMode: 0
@@ -29,6 +33,10 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 11400000, guid: 10fc4df2da32a41aaa32d77bc913491c, type: 2}
     instantiationMode: 1
+  - dependency: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 919132149155446097, guid: 06015d58386c38c4bae4e3d01b8abe8e, type: 3}
+    instantiationMode: 0
   templatePipeline: {fileID: 0}
   badge: {fileID: 0}
   addToDefaults: 0
