@@ -17,9 +17,19 @@ MonoBehaviour:
   description: plantila de computacion grafica
   preview: {fileID: 8249999115876554198}
   dependencies:
+  - dependency: {fileID: 2800000, guid: 771704fd28d98f24eb798f5c166a10e8, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: be14e52d3ec987f42a922bfa23e9af05, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 5a68a2c8045f5a942af11f7c1210b456, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: f2311cc612a3ac44b80aeb3931b24b8e, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 6a8336c473dd6ef48953be6e8c0a1412, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 6e57a73ece731d440a69689bcb3b4340, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: e20fa70f687caf749a921c812d01f18a, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     instantiationMode: 0
@@ -28,6 +38,8 @@ MonoBehaviour:
   - dependency: {fileID: 2100000, guid: d8a3a5f977c5b7a47bb6d16654a73a2a, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 11400000, guid: 10fc4df2da32a41aaa32d77bc913491c, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 742baa982fae6c14c9cee0406d6be248, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     instantiationMode: 0
