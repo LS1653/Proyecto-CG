@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_VFX_SlashPrincipal
+  m_Name: M_VFX_SlashPrincipal 1
   m_Shader: {fileID: -6465566751694194690, guid: 18db64c71b7f2b8418f02e9ddf7c9504, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -141,9 +141,10 @@ Material:
     - _BaseColor: {r: 0.8867924, g: 0.30148166, b: 0, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 16, g: 0, b: 0, a: 1}
+    - _Color: {r: 10.680627, g: 10.680627, b: 10.680627, a: 1}
     - _EmissionColor: {r: 4, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
+    - _SoftParticlesParameters: {r: 0.2, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
