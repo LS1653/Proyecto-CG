@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_VFX_Slash
+  m_Name: M_VFX_Slash_epm
   m_Shader: {fileID: -6465566751694194690, guid: 477986e647fd5f14289732a319c82fb6, type: 3}
   m_Parent: {fileID: 2100000, guid: 5edfbb0508fa3a84b8b64c2d68d02bc4, type: 2}
   m_ModifiedSerializedProperties: 18
