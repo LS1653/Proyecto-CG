@@ -40,6 +40,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Reflections:
+        m_Texture: {fileID: 8900000, guid: 472a1dc1e4cc01943921f62d64e72c0d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -70,5 +74,6 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _CircleParams: {r: 0.8, g: 0.05, b: 0, a: 0}
+    - _ReflectionColor: {r: 0.33501595, g: 0.8415094, b: 0.6476174, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
