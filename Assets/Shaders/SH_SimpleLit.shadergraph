@@ -1178,7 +1178,7 @@
     "m_ObjectId": "361ee29ea43c466e9fe21fee4c3b81d9",
     "m_Title": "Dirección de la luz",
     "m_Position": {
-        "x": -2928.0,
+        "x": -2928.000244140625,
         "y": -414.39996337890627
     }
 }
@@ -2635,8 +2635,8 @@
     "m_ObjectId": "a61079fb494e4b13a6abf4e5f4a7aa27",
     "m_Title": "Dirección de la luz",
     "m_Position": {
-        "x": -3170.39990234375,
-        "y": 778.39990234375
+        "x": -3170.400146484375,
+        "y": 778.4000244140625
     }
 }
 
