@@ -798,7 +798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VertexAnimationArea
   targetMaterial: {fileID: 2100000, guid: d25866b27dfe78a429db83c966ce9c6f, type: 2}
-  radius: 1
+  radius: 1.72
 --- !u!4 &1870128169
 Transform:
   m_ObjectHideFlags: 0
@@ -808,7 +808,7 @@ Transform:
   m_GameObject: {fileID: 1870128167}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.55, y: 2.4, z: 1.57}
+  m_LocalPosition: {x: 0.037, y: 1.838, z: 1.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
