@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_VFX_FireXplotion
+  m_Name: M_VFX_FireXplotion 1
   m_Shader: {fileID: -6465566751694194690, guid: 8e66356e84aabda4583889a501526a86, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -48,10 +48,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _CubemapAsset_4bf67ff2ca214847a82202db6236a7db_Out_0_Cubemap:
-        m_Texture: {fileID: 8900000, guid: 0febda6eb53a69344ae2a91c9f16211a, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -69,7 +65,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Fire_Texture:
-        m_Texture: {fileID: 2800000, guid: 3df8ef6487a5ada4893b58ac4203718c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 38bf0b05937200745b71416a672d2527, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -90,10 +86,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_03c08ebef99d490d83668e4c7fc30058_Out_0_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 340b03bd8b4f58c45a0c99a04d2c4255, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_5cb2e7d7ece44742a7a4338abfe7b2ff_Out_0_Texture2D:
@@ -127,7 +119,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DistortionStrenght: -0.11
+    - _DistortionStrenght: 0.01
     - _DstBlend: 10
     - _DstBlendAlpha: 10
     - _EnvironmentReflections: 1
@@ -153,7 +145,7 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 0.5520116, b: 0, a: 1}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticlesParameters: {r: 0.09, g: 0.59, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
