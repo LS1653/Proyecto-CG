@@ -5692,7 +5692,7 @@ GameObject:
   - component: {fileID: 1000586164}
   - component: {fileID: 1000586163}
   m_Layer: 0
-  m_Name: P_VFX_MKPowerUp
+  m_Name: ' '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
