@@ -55,6 +55,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "a5df4fd00f36459a9c300e8efafcb9e7"
+                },
+                "m_SlotId": 3
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "a9731e62b71b4b2089fe9f1685409eb2"
+                },
+                "m_SlotId": 2
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "cd64ac2fa7744eeda5f28163c438aab1"
                 },
                 "m_SlotId": 0
@@ -96,6 +110,21 @@
     },
     "m_SubDatas": [],
     "m_ActiveTargets": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "079b0c9630ac43c68658cc40d31bcb0c",
+    "m_Id": 2,
+    "m_DisplayName": "ShadowAttenautation",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "ShadowAttenautation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -177,6 +206,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "74e5e9b97cee42e8b7778aa97434d5b8",
+    "m_Id": 3,
+    "m_DisplayName": "ShadowAttenuation",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "ShadowAttenuation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "7d3ce2e3dcf24b72ba9b32691ce142b9",
     "m_Id": 1,
@@ -225,6 +269,9 @@
         },
         {
             "m_Id": "552d99a03c2640c29c748b637b8a67ee"
+        },
+        {
+            "m_Id": "74e5e9b97cee42e8b7778aa97434d5b8"
         }
     ],
     "synonyms": [
@@ -269,6 +316,9 @@
         },
         {
             "m_Id": "7d3ce2e3dcf24b72ba9b32691ce142b9"
+        },
+        {
+            "m_Id": "079b0c9630ac43c68658cc40d31bcb0c"
         }
     ],
     "synonyms": [],
