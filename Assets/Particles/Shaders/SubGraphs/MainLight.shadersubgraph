@@ -55,6 +55,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "403f851d51e44a4889cfddcbd794190b"
+                },
+                "m_SlotId": 3
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "a5f14add97a54bb4a8babcee17b18d43"
+                },
+                "m_SlotId": 3
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "6b3825a855914a9c93a5d0140af68a75"
                 },
                 "m_SlotId": 0
@@ -156,6 +170,9 @@
         },
         {
             "m_Id": "ae9caead27fa4a0e86a5e309cda76967"
+        },
+        {
+            "m_Id": "a502047584e642b6912ffad4395c5897"
         }
     ],
     "synonyms": [
@@ -234,8 +251,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -66.0,
-            "y": -151.0,
+            "x": -66.00000762939453,
+            "y": -149.99998474121095,
             "width": 208.0,
             "height": 314.0
         }
@@ -257,6 +274,21 @@
     },
     "m_Space": 2,
     "m_PositionSource": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "7661c707859f412bb846345034a200aa",
+    "m_Id": 3,
+    "m_DisplayName": "ShadowAttenuation",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "ShadowAttenuation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -307,6 +339,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "a502047584e642b6912ffad4395c5897",
+    "m_Id": 3,
+    "m_DisplayName": "ShadowAttenuation",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "ShadowAttenuation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SubGraphOutputNode",
     "m_ObjectId": "a5f14add97a54bb4a8babcee17b18d43",
     "m_Group": {
@@ -317,10 +364,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 396.0,
-            "y": -150.0,
-            "width": 102.0,
-            "height": 101.0
+            "x": 492.0,
+            "y": -149.99998474121095,
+            "width": 155.00006103515626,
+            "height": 124.99998474121094
         }
     },
     "m_Slots": [
@@ -329,6 +376,9 @@
         },
         {
             "m_Id": "90f53ca726b94a869c5ac5b9d4a050bb"
+        },
+        {
+            "m_Id": "7661c707859f412bb846345034a200aa"
         }
     ],
     "synonyms": [],
