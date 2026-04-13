@@ -65,6 +65,20 @@
                 },
                 "m_SlotId": 2
             }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "3e35e4a073b2416d874c078365e69a28"
+                },
+                "m_SlotId": 3
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "8e4ed5afb33a430bb6106323b691693e"
+                },
+                "m_SlotId": 3
+            }
         }
     ],
     "m_VertexContext": {
@@ -96,6 +110,21 @@
     },
     "m_SubDatas": [],
     "m_ActiveTargets": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "33d603b7fd8346b99fad8e696833e11e",
+    "m_Id": 3,
+    "m_DisplayName": "ShadowAttenuation",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "ShadowAttenuation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -162,6 +191,9 @@
         },
         {
             "m_Id": "a66b12e51ef346fbad1da6943669da93"
+        },
+        {
+            "m_Id": "33d603b7fd8346b99fad8e696833e11e"
         }
     ],
     "synonyms": [
@@ -207,6 +239,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "5f2ec1f25b91405eb3dfaa0d94d72516",
+    "m_Id": 3,
+    "m_DisplayName": "ShadowAttenuation",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "ShadowAttenuation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "754620b4d07742619cdae89809fdca25",
     "m_Name": "",
@@ -237,6 +284,9 @@
         },
         {
             "m_Id": "fc766fee14834899b8e84e6d1c5e1814"
+        },
+        {
+            "m_Id": "5f2ec1f25b91405eb3dfaa0d94d72516"
         }
     ],
     "synonyms": [],
