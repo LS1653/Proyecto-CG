@@ -1,6 +1,7 @@
 //#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 
-
+#ifndef CUSTOM_LIGHTING
+#define CUSTOM_LIGHTING
 
 void MainLight_float(float3 PositionWS, out float3 Direction, out float3 Color, out float ShadowAttenuation)//float -> 32 bits
 {
@@ -19,16 +20,24 @@ void MainLight_float(float3 PositionWS, out float3 Direction, out float3 Color, 
 }
 
 
-void AdditionalLightsSimple_float(float3 PositionWS, float3 ViewDirectionWS, float3 NormalWS, out float3 Lit)
+void AdditionalLightsSimple_float(float2 UVSS, float3 PositionWS, float3 ViewDirectionWS, float3 NormalWS, out float3 Lit)
 {
 #ifdef SHADERGRAPH_PREVIEW
     Lit = 0;
 #else
+    Lit = 0;
     uint additionalLightCount = GetAdditionalLightsCount();
     
     //TODO: Forward+
 
-    LIGHT_LOOP_BEGIN(additionalLightCount)
+    #ifdef USE_FORWARD_PLUS
+    InputData inputData = (InputData)0;
+    inputData.normalizedScreenSpaceUV = UVSS;
+    inputData.positionWS = PositionWS;
+    #endif
+    float a = 0;
+
+    LIGHT_LOOP_BEGIN(additionalLightCount);
 
     Light currentLight = GetAdditionalLight(lightIndex, PositionWS);
 
@@ -55,3 +64,4 @@ void AdditionalLightsSimple_float(float3 PositionWS, float3 ViewDirectionWS, flo
     
 #endif
 }
+#endif
