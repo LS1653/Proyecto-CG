@@ -1,8 +1,15 @@
+// include Guard
+
+#ifndef CUSTOM_LIGHTING
+#define CUSTOM_LIGHTING 
+
+
 //#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+
 
 void MainLight_float(float3 PositionWS, out float3 Direction, out float3 Color, out float ShadowAttenuation)
 {
-    #if defined(SHADERGRAPH_PREVIEW)
+    #ifdef SHADERGRAPH_PREVIEW
     Direction = normalize(float3(1,1,-1));
     Color = 1.0f;
     ShadowAttenuation =  1.0f; 
@@ -15,14 +22,18 @@ void MainLight_float(float3 PositionWS, out float3 Direction, out float3 Color, 
     #endif 
 }
 
-void AdditionalLightSimple_float (float3 PositionWS, float3 ViewDirectionWS,  float3 NormalWS, out float3 Lit)
+void AdditionalLightSimple_float (float2 UVSS, float3 PositionWS, float3 ViewDirectionWS,  float3 NormalWS, out float3 Lit)
 {  
     #ifdef SHADERGRAPH_PREVIEW
     Lit = 0;
     #else
     uint addtionalLightCount = GetAdditionalLightsCount();
 
-    //TODO: Forward+
+    #ifdef USE_FORWARD_PLUS
+    InputData inputData = (InputData)0;
+    inputData.normalizedScreenSpaceUV = UVSS;
+    inputData.positionWS = PositionWS; 
+    #endif 
 
     LIGHT_LOOP_BEGIN(addtionalLightCount)
     Light currentLight = GetAdditionalLight(lightIndex, PositionWS);
@@ -31,21 +42,28 @@ void AdditionalLightSimple_float (float3 PositionWS, float3 ViewDirectionWS,  fl
 
     float lambert = dot(currentLight.direction, NormalWS);
     lambert = max (0, lambert * 0.5f + 0.5f); // Half Lambert
-    float3 diffuse = lambert * currentLight.color * currentLight.shadowAttenuation * currentLight.distanceAttenuation;
+    float3 diffuse = lambert
+    * currentLight.color
+    * currentLight.shadowAttenuation
+    * currentLight.distanceAttenuation;
 
     //Specular
 
 
-    float3 h = normalize(ViewDirectionWS * currentLight.direction)
-    float blingPhong = dot(h,normalize);
-    blingPhong = max(0, blingPhong);
-    blingPhong = pow(blingPhong, 60.0f);
-    float3 specular = blingPhong * currentLight.color * currentLight.shadowAttenuation * currentLight.distanceAttenuation;
+    float3 h = normalize(ViewDirectionWS + currentLight.direction);
+    float blinnPhong = dot(h, NormalWS);
+    blinnPhong = max(0, blinnPhong);
+    blinnPhong = pow(blinnPhong, 60.0f);
+    float3 specular = blinnPhong
+    * currentLight.color
+    * currentLight.shadowAttenuation
+    * currentLight.distanceAttenuation;
 
-    Lit += specular + diffuse;
-
+    Lit += diffuse + specular;
     LIGHT_LOOP_END
 
     #endif
 
 }
+
+#endif
