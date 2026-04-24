@@ -74,6 +74,9 @@
         },
         {
             "m_Id": "976ccd4ac9ed46d79a4720217769dc8d"
+        },
+        {
+            "m_Id": "1455be8928d240eeaf91afbd971246b5"
         }
     ],
     "m_GroupDatas": [
@@ -448,8 +451,8 @@
     "m_ObjectId": "0de7471453e94161919707e03f0e58db",
     "m_Title": "Dots",
     "m_Position": {
-        "x": -3685.000244140625,
-        "y": -832.0
+        "x": -3684.999755859375,
+        "y": -831.9999389648438
     }
 }
 
@@ -465,6 +468,61 @@
     "m_StageCapability": 2,
     "m_Value": true,
     "m_DefaultValue": true
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
+    "m_ObjectId": "1455be8928d240eeaf91afbd971246b5",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Refraction",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -2560.10302734375,
+            "y": -653.9290161132813,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "d29e821fab69445e906dbe1d323ec015"
+        },
+        {
+            "m_Id": "3e67e57cfd27455dbb1e30a16b2ca732"
+        },
+        {
+            "m_Id": "2ffcfa7a96874d6cbe1b92690005abf0"
+        },
+        {
+            "m_Id": "d5349ba39cd04fb185cd58fb42e9a82c"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"982be5c5d81d0304e8d0d4f8f6255410\",\n        \"type\": 3\n    }\n}",
+    "m_PropertyGuids": [
+        "a6ec61bd-1d3f-4625-9c19-890a3d875a17",
+        "0f7ca394-d149-48aa-9245-02a513ff304f",
+        "bf97f00a-fea0-406e-a701-87ec82a66724"
+    ],
+    "m_PropertyIds": [
+        -48569821,
+        -1377515428,
+        924428687
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -773,6 +831,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "2ffcfa7a96874d6cbe1b92690005abf0",
+    "m_Id": 924428687,
+    "m_DisplayName": "RefractionScale",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_RefractionScale",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SubtractNode",
     "m_ObjectId": "38c2fa110b484a20a8b4c64a2ca5dea0",
     "m_Group": {
@@ -947,6 +1020,21 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "3e67e57cfd27455dbb1e30a16b2ca732",
+    "m_Id": -1377515428,
+    "m_DisplayName": "RefractionSpeed",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_RefractionSpeed",
+    "m_StageCapability": 2,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
@@ -1979,6 +2067,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "d29e821fab69445e906dbe1d323ec015",
+    "m_Id": -48569821,
+    "m_DisplayName": "RefractionStrength",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_RefractionStrength",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "d2c9f62454704277addf51f7221c7b79",
     "m_Id": 0,
@@ -1994,6 +2097,29 @@
     "m_DefaultValue": {
         "x": 0.0,
         "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "d5349ba39cd04fb185cd58fb42e9a82c",
+    "m_Id": 1,
+    "m_DisplayName": "Output",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Output",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
     },
     "m_Labels": []
 }
