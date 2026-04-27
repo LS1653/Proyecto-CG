@@ -1,0 +1,37 @@
+#ifndef GAUSSIAN_FILTER
+#define GAUSSIAN_FILTER
+
+void GaussianFilter_float(float2 UV, float2 ScreenSize, float FilterDistance, out float4 FilteredImage)
+{
+    // Sample the texture at the given UV coordinates
+    float4 Sample = Texture.Sample(Sampler, UV);
+
+    // Initialize the filtered image with the sampled color
+    FilteredImage = Sample;
+
+    // Define the Gaussian kernel weights (3x3 kernel)
+    float Kernel[3][3] = {
+        {0.0625, 0.125, 0.0625},
+        {0.125,  0.25,  0.125},
+        {0.0625, 0.125, 0.0625}
+    };
+
+    // Loop through the kernel and apply it to the neighboring pixels
+    [unroll(9)]
+    for (int x = -1; x <= 1; x++)
+    {
+        for (int y = -1; y <= 1; y++)
+        {
+            // Calculate the neighboring pixel's UV coordinates
+            float2 NeighborUV = UV + float2(x, y) * FilterDistance / ScreenSize;
+
+            // Sample the texture at the neighboring UV coordinates
+            float4 NeighborSample = Texture.Sample(Sampler, NeighborUV);
+
+            // Accumulate the weighted color from the neighboring sample
+            FilteredImage += NeighborSample * Kernel[y + 1][x + 1];
+        }
+    }
+}
+
+#endif // GAUSSIAN_FILTER
