@@ -325,7 +325,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "_Dampen",
     "m_StageCapability": 3,
-    "m_Value": 0.20000000298023225,
+    "m_Value": 0.30000001192092898,
     "m_DefaultValue": 0.0,
     "m_Labels": [],
     "m_LiteralMode": false
@@ -341,7 +341,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "_FoamFalloff",
     "m_StageCapability": 3,
-    "m_Value": 0.30000001192092898,
+    "m_Value": 0.10000000149011612,
     "m_DefaultValue": 0.0,
     "m_Labels": [],
     "m_LiteralMode": false
@@ -464,7 +464,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "_FoamThreshhold",
     "m_StageCapability": 3,
-    "m_Value": 0.4000000059604645,
+    "m_Value": 0.30000001192092898,
     "m_DefaultValue": 0.0,
     "m_Labels": [],
     "m_LiteralMode": false
