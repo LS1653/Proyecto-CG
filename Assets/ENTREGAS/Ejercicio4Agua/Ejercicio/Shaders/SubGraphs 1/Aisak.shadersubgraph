@@ -1287,7 +1287,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Scale",
     "m_StageCapability": 3,
-    "m_Value": 2.130000114440918,
+    "m_Value": 5.0,
     "m_DefaultValue": 10.0,
     "m_Labels": [],
     "m_LiteralMode": false
@@ -1999,7 +1999,7 @@
     "m_Hidden": false,
     "m_PerRendererData": false,
     "m_customAttributes": [],
-    "m_Value": 0.05000000074505806,
+    "m_Value": 0.8899999856948853,
     "m_FloatType": 0,
     "m_LiteralFloatMode": false,
     "m_RangeValues": {

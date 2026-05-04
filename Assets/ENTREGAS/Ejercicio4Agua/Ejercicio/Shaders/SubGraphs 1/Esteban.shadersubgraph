@@ -4478,7 +4478,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "X",
     "m_StageCapability": 3,
-    "m_Value": 0.20000000298023225,
+    "m_Value": 0.800000011920929,
     "m_DefaultValue": 0.0,
     "m_Labels": [],
     "m_LiteralMode": false
@@ -6128,8 +6128,8 @@
     "m_ObjectId": "7485998ba27a4bb8b3e34768dfbe9e35",
     "m_Title": "Desplasamiento",
     "m_Position": {
-        "x": -4486.00048828125,
-        "y": -2422.000244140625
+        "x": -4486.0,
+        "y": -2422.0
     }
 }
 
@@ -7440,7 +7440,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "X",
     "m_StageCapability": 3,
-    "m_Value": 0.3400000035762787,
+    "m_Value": 0.6000000238418579,
     "m_DefaultValue": 0.0,
     "m_Labels": [],
     "m_LiteralMode": false
