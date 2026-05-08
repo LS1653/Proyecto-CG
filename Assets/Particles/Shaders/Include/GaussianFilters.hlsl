@@ -1,6 +1,18 @@
 #ifndef GAUSSIAN_FILTERS
 #define GAUSSIAN_FILTERS
 
+float SampleGaussianKernel3x3(float2 coords)
+{
+    float index = (coords.x + 1) + ((-coords.y) + 1) * 3;
+    float GaussianKernel3x3[9] = {
+        0.06,   0.125,  0.06,
+        0.125,  0.25,   0.125,
+        0.06,   0.125,  0.06
+    };
+    
+    return GaussianKernel3x3[clamp(index, 0, 8)];
+}
+
 void GaussianFilter3x3_float(float2 UV, float2 ScreenSize, float FilterDistance, out float4 FilteredImage)
 {
     [unroll(9)]
