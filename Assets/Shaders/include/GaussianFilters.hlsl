@@ -15,6 +15,8 @@ float SampleGaussianKernel3x3(float2 coords)
 
 void GaussianFilter3x3_float(float2 UV, float2 ScreenSize, float FilterDistance, out float4 FilteredImage)
 {
+#ifndef SHADERGRAPH_PREVIEW
+    FilteredImage = 0;
     [unroll(9)]
     for (int y = 1; y >= -1; y--)
     {
@@ -25,6 +27,9 @@ void GaussianFilter3x3_float(float2 UV, float2 ScreenSize, float FilterDistance,
             FilteredImage += LOAD_TEXTURE2D_X_LOD(_BlitTexture, pixelCoords, 0) * SampleGaussianKernel3x3(float2(x, y));
         }
     }
+#else
+    FilteredImage = float4(0.33,0.33,0.34,1);
+#endif
 }
 
 #endif
