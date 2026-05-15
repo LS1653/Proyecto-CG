@@ -1040,20 +1040,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "db9c080aebea4297b467755574bb65a3"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "859949e0e397413b819827e3260e77c9"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "de20657cf65d42d1a5b72564dfad7705"
                 },
                 "m_SlotId": 2
@@ -2453,8 +2439,8 @@
     "m_ObjectId": "32b48552250d49238560a07b53e0a890",
     "m_Title": "Screen Texel SIze",
     "m_Position": {
-        "x": -1103.000244140625,
-        "y": 174.00006103515626
+        "x": -1103.0,
+        "y": 174.0
     }
 }
 
@@ -7161,9 +7147,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 2921.999755859375,
-            "y": 1028.9998779296875,
-            "width": 237.0,
+            "x": 2774.0,
+            "y": 1042.0,
+            "width": 237.000244140625,
             "height": 327.0
         }
     },
