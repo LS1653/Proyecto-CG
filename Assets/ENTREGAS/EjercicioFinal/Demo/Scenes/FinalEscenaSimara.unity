@@ -170,8 +170,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248674744}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -181,7 +181,7 @@ Transform:
   - {fileID: 1500699631}
   - {fileID: 1783058411}
   - {fileID: 399263424}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1203643008}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
@@ -5429,7 +5429,7 @@ ParticleSystem:
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 1
+  autoRandomSeed: 0
   startDelay:
     serializedVersion: 2
     minMaxState: 0
@@ -5486,7 +5486,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 0
+  randomSeed: 1212
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10321,6 +10321,7 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References:
+    - 286508d59d7f3d142929bb72eb669fa0: {fileID: 875075953}
     - 9afc8f543e088d440b61ef1f223790ed: {fileID: 1384297999}
     - 4e85079023ca88f44bcb2dedae779242: {fileID: 396937426}
     - 467237ae343f7be40a1a4ad4bef03002: {fileID: 1384297999}
@@ -10524,7 +10525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e7c5a9d8f01a44d8c38ae277601e92, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e7c5a9d8f01a44d8c38ae277601e92, type: 3}
       propertyPath: m_LocalRotation.y
@@ -10532,7 +10533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e7c5a9d8f01a44d8c38ae277601e92, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e7c5a9d8f01a44d8c38ae277601e92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11953,7 +11954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e7c5a9d8f01a44d8c38ae277601e92, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e7c5a9d8f01a44d8c38ae277601e92, type: 3}
       propertyPath: m_LocalRotation.y
@@ -11961,7 +11962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e7c5a9d8f01a44d8c38ae277601e92, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e7c5a9d8f01a44d8c38ae277601e92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13371,7 +13372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1203643008
 Transform:
   m_ObjectHideFlags: 0
@@ -13386,6 +13387,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 941357828}
+  - {fileID: 248674746}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1384297999
@@ -32958,7 +32960,7 @@ ParticleSystem:
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 1
+  autoRandomSeed: 0
   startDelay:
     serializedVersion: 2
     minMaxState: 0
@@ -33015,7 +33017,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 0
+  randomSeed: 8707
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -47429,4 +47431,3 @@ SceneRoots:
   - {fileID: 789347670}
   - {fileID: 387482386}
   - {fileID: 1203643008}
-  - {fileID: 248674746}
