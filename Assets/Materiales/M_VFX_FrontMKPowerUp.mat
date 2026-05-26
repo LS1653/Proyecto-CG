@@ -21,29 +21,38 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_VFX_FrontMKPowerUp
-  m_Shader: {fileID: -6465566751694194690, guid: 5b35b92f35910bb4cbca1b3f27cbfe76, type: 3}
-  m_Parent: {fileID: 2100000, guid: 566866730a2d0794ba928290291bdd4f, type: 2}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Parent: {fileID: -6478536213147159724, guid: 5acb6f0a723882443be1244806e8f1b7, type: 3}
+  m_ModifiedSerializedProperties: 18
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _FLIPBOOKBLENDING_OFF
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap:
-    RenderType: Transparent
+    RenderType: Opaque
   disabledShaderPasses:
-  - DepthOnly
+  - GRABPASS
   - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _Cull: 2
+    - _DstBlend: 0
+    - _SrcBlend: 1
+    - _ZWrite: 1
     m_Colors:
+    - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _CircleParams: {r: 0.8, g: 0.2, b: 0, a: 0}
+    - _Color: {r: 0.17573982, g: 0.64451903, b: 0.9063317, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
