@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_VFX_Particle1_Yepes
+  m_Name: M_VFX_Chispas_Yepes
   m_Shader: {fileID: 4800000, guid: 0406db5a14f94604a8c57ccfbc9f3b46, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -43,7 +43,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: d009ddf1b7bcdc444844eb0f80532c77, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7c14c0adea422ce40bdd5a7043986705, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -148,11 +148,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.24731618, b: 0.15686274, a: 1}
+    - _BaseColor: {r: 1, g: 0.962158, b: 0.11792451, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 1, g: 0.24731615, b: 0.1568627, a: 1}
-    - _EmissionColor: {r: 2.439426, g: 0.3309849, b: 0.17260087, a: 1}
+    - _Color: {r: 1, g: 0.962158, b: 0.11792449, a: 1}
+    - _EmissionColor: {r: 2.439426, g: 2.412476, b: 0.178806, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
