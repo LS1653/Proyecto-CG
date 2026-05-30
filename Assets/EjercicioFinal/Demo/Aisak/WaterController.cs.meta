@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - WaterMaterial: {instanceID: 0}
+  - WaterMaterial: {fileID: 2100000, guid: bca5d649200022b48a5996167e27e4e7, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -10,12 +10,12 @@ public class WaterController : MonoBehaviour
 
     float timer;
 
-    void Update()
-    {
-        timer += Time.deltaTime;
+   void Update()
+{
+    float value = (Mathf.Sin(Time.time * speed) + 1f) / 2f;
 
-        float value = (Mathf.Sin(Time.time * speed) + 1f) / 2f;
+    Debug.Log(value);
 
-        WaterMaterial.SetFloat("_Strenght", value);
-    }
+    WaterMaterial.SetFloat("_Strength", value);
+}
 }

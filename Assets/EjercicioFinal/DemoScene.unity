@@ -99807,7 +99807,7 @@ MonoBehaviour:
   - vfxName: WaterBending
     director: {fileID: 1964788486}
     rootObject: {fileID: 307024586}
-    padre: {fileID: 0}
+    padre: {fileID: 1641589672}
   dropdown: {fileID: 1047138972}
 --- !u!1 &1423389027
 GameObject:
@@ -105066,7 +105066,7 @@ GameObject:
   - component: {fileID: 1641589671}
   - component: {fileID: 1641589670}
   m_Layer: 0
-  m_Name: PostProcessor (1)
+  m_Name: PostProcessor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105103,12 +105103,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PostProcessController
   mat: {fileID: 2100000, guid: bca5d649200022b48a5996167e27e4e7, type: 2}
   floats:
-  - property: _Strenght
+  - property: _Strength
     curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.001045227
+        time: 0.0025405884
         value: 0.042304993
         inSlope: 0
         outSlope: 0
@@ -105117,23 +105117,23 @@ MonoBehaviour:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.15836078
-        value: 0.5514695
-        inSlope: -0.9325592
-        outSlope: -0.9325592
-        tangentMode: 0
+        time: 0.18638355
+        value: 0.26851815
+        inSlope: 1.1801528
+        outSlope: 1.1801528
+        tangentMode: 136
         weightedMode: 0
-        inWeight: 0.68107945
-        outWeight: 0.29048258
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.44944382
-        value: 0.040041685
-        inSlope: -0.04126314
-        outSlope: -0.04126314
-        tangentMode: 0
+        time: 0.35975266
+        value: 0.4638698
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
-        inWeight: 0.7373414
-        outWeight: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -105226,7 +105226,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641589668}
   serializedVersion: 8
-  lengthInSec: 1
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -105241,7 +105241,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1.25
+    scalar: 0
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -124716,6 +124716,7 @@ PlayableDirector:
     - 4e85079023ca88f44bcb2dedae779242: {fileID: 602606193}
     - 467237ae343f7be40a1a4ad4bef03002: {fileID: 1290066333}
     - f423590c9d3df074b9036295e7419115: {fileID: 602606193}
+    - 111164ab406a54e4dbe35ce96695fcfe: {fileID: 1641589668}
     - 6cafad3e11fa37341b2dda3955f41b8b: {fileID: 1688662909}
     - 9d6c5b65a8dd8f14aaa6bf8a4c7e529b: {fileID: 392688038}
 --- !u!1 &2071994987

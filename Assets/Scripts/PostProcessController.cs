@@ -29,13 +29,16 @@ public class PostProcessController : MonoBehaviour
     {
         if (particles.isPlaying)
         {
+            Debug.Log("PostProcess funcionando");
             foreach (MaterialFloatModifier modifier in floats)
             {
                 modifier.Modify(mat, particles.time / particles.main.duration);
+                Debug.Log("PostProcess funcionando");
             }
             foreach (MaterialColorModifier modifier in colors)
             {
                 modifier.Modify(mat, particles.time / particles.main.duration);
+                Debug.Log("PostProcess funcionando");
             }
         }
     }
