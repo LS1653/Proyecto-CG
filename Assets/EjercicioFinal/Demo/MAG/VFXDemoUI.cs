@@ -12,6 +12,7 @@ public class VFXDemoUI : MonoBehaviour
         public string vfxName;
         public PlayableDirector director;
         public GameObject rootObject;
+        public ParticleSystem padre;
     }
 
     [Header("VFX List")]
@@ -38,7 +39,7 @@ public class VFXDemoUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void PopulateDropdown()
@@ -67,6 +68,7 @@ public class VFXDemoUI : MonoBehaviour
                 if (vfx.director == currentDirector)
                 {
                     vfx.rootObject.SetActive(false);
+
                     break;
                 }
             }
@@ -85,9 +87,20 @@ public class VFXDemoUI : MonoBehaviour
     {
         if (currentDirector != null)
         {
+            currentDirector.Stop(); //Por si no se había detenido antes
             currentDirector.Play();
+
+            foreach (var vfx in vfxList)
+            {
+                if (vfx.director == currentDirector)
+                {
+                    vfx.padre.Play();
+                    break;
+                }
+            }
         }
     }
+
 
     public void PauseCurrent()
     {

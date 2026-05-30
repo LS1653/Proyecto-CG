@@ -38,7 +38,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _DistortionStrenght: 2
-    - _Obturation: 1.0040588
+    - _Obturation: 0.99310184
     - _SpeedNoise: 5
     m_Colors:
     - _Center: {r: 0.5, g: 0.5, b: 0, a: 0}
