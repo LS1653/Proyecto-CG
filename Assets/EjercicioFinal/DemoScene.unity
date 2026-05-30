@@ -105102,13 +105102,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PostProcessController
   mat: {fileID: 2100000, guid: bca5d649200022b48a5996167e27e4e7, type: 2}
   floats:
-  - property: _NoiseContrast
+  - property: _Strenght
     curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0
+        time: 0.049991608
+        value: -0.000030517578
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -105116,8 +105116,8 @@ MonoBehaviour:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.19656372
-        value: 0.09672928
+        time: 0.098724365
+        value: 0.010547638
         inSlope: 0
         outSlope: 0
         tangentMode: 0

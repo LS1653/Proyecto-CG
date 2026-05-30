@@ -42,11 +42,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _Frecuency: 10
-    - _NoiseContrast: 0.09672928
-    - _Noise_Scale: 4.2
-    - _Noise_Speed: 0.464
+    - _NoiseContrast: 0.010547638
+    - _Noise_Scale: 3.75
+    - _Noise_Speed: 0.595
     - _Speed: 0
-    - _Strength: 0
+    - _Strength: 1
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
