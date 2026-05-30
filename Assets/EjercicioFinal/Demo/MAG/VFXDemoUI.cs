@@ -11,6 +11,7 @@ public class VFXDemoUI : MonoBehaviour
     {
         public string vfxName;
         public PlayableDirector director;
+        public GameObject rootObject;
     }
 
     [Header("VFX List")]
@@ -60,9 +61,20 @@ public class VFXDemoUI : MonoBehaviour
         if (currentDirector != null)
         {
             currentDirector.Stop();
+
+            foreach (var vfx in vfxList)
+            {
+                if (vfx.director == currentDirector)
+                {
+                    vfx.rootObject.SetActive(false);
+                    break;
+                }
+            }
         }
 
-        currentDirector = vfxList[index].director;
+        var selectedVFX = vfxList[index];
+        selectedVFX.rootObject.SetActive(true);
+        currentDirector = selectedVFX.director;
 
         // Reiniciar tiempo
         currentDirector.time = 0;
